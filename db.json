@@ -1,38 +1,81 @@
 {
   "units": [
     { "id": 1, "type": "Length", "label": "Meter", "symbol": "m" },
-    { "id": 2, "type": "Length", "label": "Kilometer", "symbol": "km" },
-    { "id": 3, "type": "Length", "label": "Centimeter", "symbol": "cm" },
+    { "id": 2, "type": "Length", "label": "Centimeter", "symbol": "cm" },
+    { "id": 3, "type": "Length", "label": "Millimeter", "symbol": "mm" },
+    { "id": 4, "type": "Length", "label": "Kilometer", "symbol": "km" },
+    { "id": 5, "type": "Length", "label": "Inch", "symbol": "in" },
+    { "id": 6, "type": "Length", "label": "Foot", "symbol": "ft" },
+    { "id": 7, "type": "Length", "label": "Yard", "symbol": "yd" },
+    { "id": 8, "type": "Length", "label": "Mile", "symbol": "mi" },
 
-    { "id": 4, "type": "Weight", "label": "Gram", "symbol": "g" },
-    { "id": 5, "type": "Weight", "label": "Kilogram", "symbol": "kg" },
+    { "id": 9, "type": "Weight", "label": "Tonne", "symbol": "t" },
+    { "id": 10, "type": "Weight", "label": "Kilogram", "symbol": "kg" },
+    { "id": 11, "type": "Weight", "label": "Gram", "symbol": "g" },
+    { "id": 12, "type": "Weight", "label": "Pound", "symbol": "lb" },
+    { "id": 13, "type": "Weight", "label": "Ounce", "symbol": "oz" },
 
-    { "id": 6, "type": "Time", "label": "Second", "symbol": "s" },
-    { "id": 7, "type": "Time", "label": "Minute", "symbol": "min" },
-    { "id": 8, "type": "Time", "label": "Hour", "symbol": "hr" },
+    { "id": 14, "type": "Temperature", "label": "Celsius", "symbol": "C" },
+    { "id": 15, "type": "Temperature", "label": "Fahrenheit", "symbol": "F" },
+    { "id": 16, "type": "Temperature", "label": "Kelvin", "symbol": "K" },
 
-    { "id": 9, "type": "Temperature", "label": "Celsius", "symbol": "C" },
-    { "id": 10, "type": "Temperature", "label": "Fahrenheit", "symbol": "F" },
-    { "id": 11, "type": "Temperature", "label": "Kelvin", "symbol": "K" }
+    { "id": 17, "type": "Volume", "label": "Liter", "symbol": "L" },
+    { "id": 18, "type": "Volume", "label": "Milliliter", "symbol": "mL" },
+    { "id": 19, "type": "Volume", "label": "Gallon", "symbol": "gal" },
+    { "id": 20, "type": "Volume", "label": "Cubic Meter", "symbol": "m3" }
   ],
 
   "conversions": [
-    { "id": 1, "from": "km", "to": "m", "factor": 1000, "formula": null },
-    { "id": 2, "from": "m", "to": "km", "factor": 0.001, "formula": null },
-    { "id": 3, "from": "cm", "to": "m", "factor": 0.01, "formula": null },
-    { "id": 4, "from": "m", "to": "cm", "factor": 100, "formula": null },
+    { "id": 1, "from": "m", "to": "cm", "factor": 100, "formula": null },
+    { "id": 2, "from": "cm", "to": "m", "factor": 0.01, "formula": null },
 
-    { "id": 5, "from": "kg", "to": "g", "factor": 1000, "formula": null },
-    { "id": 6, "from": "g", "to": "kg", "factor": 0.001, "formula": null },
+    { "id": 3, "from": "m", "to": "mm", "factor": 1000, "formula": null },
+    { "id": 4, "from": "mm", "to": "m", "factor": 0.001, "formula": null },
 
-    { "id": 7, "from": "min", "to": "s", "factor": 60, "formula": null },
-    { "id": 8, "from": "hr", "to": "min", "factor": 60, "formula": null },
-    { "id": 9, "from": "hr", "to": "s", "factor": 3600, "formula": null },
+    { "id": 5, "from": "m", "to": "km", "factor": 0.001, "formula": null },
+    { "id": 6, "from": "km", "to": "m", "factor": 1000, "formula": null },
 
-    { "id": 10, "from": "C", "to": "F", "factor": null, "formula": "(x*9/5)+32" },
-    { "id": 11, "from": "F", "to": "C", "factor": null, "formula": "(x-32)*5/9" },
-    { "id": 12, "from": "C", "to": "K", "factor": null, "formula": "x+273.15" },
-    { "id": 13, "from": "K", "to": "C", "factor": null, "formula": "x-273.15" }
+    { "id": 7, "from": "m", "to": "in", "factor": 39.3701, "formula": null },
+    { "id": 8, "from": "in", "to": "m", "factor": 0.0254, "formula": null },
+
+    { "id": 9, "from": "m", "to": "ft", "factor": 3.28084, "formula": null },
+    { "id": 10, "from": "ft", "to": "m", "factor": 0.3048, "formula": null },
+
+    { "id": 11, "from": "m", "to": "yd", "factor": 1.09361, "formula": null },
+    { "id": 12, "from": "yd", "to": "m", "factor": 0.9144, "formula": null },
+
+    { "id": 13, "from": "m", "to": "mi", "factor": 0.000621371, "formula": null },
+    { "id": 14, "from": "mi", "to": "m", "factor": 1609.344, "formula": null },
+
+    { "id": 15, "from": "kg", "to": "g", "factor": 1000, "formula": null },
+    { "id": 16, "from": "g", "to": "kg", "factor": 0.001, "formula": null },
+
+    { "id": 17, "from": "kg", "to": "lb", "factor": 2.20462, "formula": null },
+    { "id": 18, "from": "lb", "to": "kg", "factor": 0.453592, "formula": null },
+
+    { "id": 19, "from": "kg", "to": "oz", "factor": 35.274, "formula": null },
+    { "id": 20, "from": "oz", "to": "kg", "factor": 0.0283495, "formula": null },
+
+    { "id": 21, "from": "t", "to": "kg", "factor": 1000, "formula": null },
+    { "id": 22, "from": "kg", "to": "t", "factor": 0.001, "formula": null },
+
+    { "id": 23, "from": "L", "to": "mL", "factor": 1000, "formula": null },
+    { "id": 24, "from": "mL", "to": "L", "factor": 0.001, "formula": null },
+
+    { "id": 25, "from": "L", "to": "gal", "factor": 0.264172, "formula": null },
+    { "id": 26, "from": "gal", "to": "L", "factor": 3.78541, "formula": null },
+
+    { "id": 27, "from": "L", "to": "m3", "factor": 0.001, "formula": null },
+    { "id": 28, "from": "m3", "to": "L", "factor": 1000, "formula": null },
+
+    { "id": 29, "from": "C", "to": "F", "factor": null, "formula": "(x*9/5)+32" },
+    { "id": 30, "from": "F", "to": "C", "factor": null, "formula": "(x-32)*5/9" },
+
+    { "id": 31, "from": "C", "to": "K", "factor": null, "formula": "x+273.15" },
+    { "id": 32, "from": "K", "to": "C", "factor": null, "formula": "x-273.15" },
+
+    { "id": 33, "from": "F", "to": "K", "factor": null, "formula": "((x-32)*5/9)+273.15" },
+    { "id": 34, "from": "K", "to": "F", "factor": null, "formula": "((x-273.15)*9/5)+32" }
   ],
 
   "history": []
